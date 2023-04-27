@@ -5,7 +5,7 @@
 }
 
 .section-box {
-  padding: 0 0 0;
+  padding: 120px 0 0;
   border-top: 1px solid $gray;
   margin-top: 60px;
 
@@ -15,6 +15,12 @@
     border-radius: 30px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 20px rgba(#000000, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -26,7 +32,6 @@
 h2.title-style {
   font-size: 30px;
   margin-bottom: 40px;
-  padding-top: 100px;
 }
 
 h3.title-style {

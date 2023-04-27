@@ -13,7 +13,6 @@
   }
 
   .logo {
-    margin-right: auto;
     a {
       display: block;
       font-family: "Chakra Petch", sans-serif;
@@ -27,10 +26,6 @@
         transform: scale(1.05);
       }
     }
-  }
-
-  .menu {
-    width: 100%;
   }
 
   .menu-list {
@@ -106,5 +101,92 @@
         }
       }
     }
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+}
+
+.box-menu-mobile {
+  display: none;
+}
+
+@media (max-width: 1060px) {
+  #header {
+    position: fixed;
+    width: 100%;
+
+    .menu {
+      position: absolute;
+      right: 100%;
+      height: 100vh;
+      width: 100vw;
+      z-index: 2;
+      top: 0;
+      transition: all 0.3s ease-in-out;
+      background: rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+
+      &.active {
+        right: 0;
+      }
+
+      .menu-list {
+        flex-direction: column;
+        background: #fff;
+        height: 100%;
+        width: 50vw;
+        gap: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        overflow: auto;
+        justify-content: center;
+        margin-left: auto;
+
+        .menu-item {
+          width: 100%;
+          padding: 0;
+          a {
+            display: block;
+            font-size: 20px;
+          }
+
+          &.dropdown-menu {
+            > a {
+              padding-bottom: 10px;
+            }
+
+            .sub-menu {
+              opacity: 1;
+              position: static;
+              box-shadow: none;
+              background: $red;
+              border-radius: 0;
+
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menu-mobile {
+      display: block;
+      width: 30px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #header .menu .menu-list {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 413px) {
+  #header .logo a {
+    font-size: 40px;
   }
 }

@@ -1,0 +1,21 @@
+.swal2-container {
+  .swal2-modal {
+    width: 60%;
+    padding: 0px;
+    border-radius: 30px;
+
+    .swal2-image {
+      margin: 0;
+      border-radius: 30px;
+    }
+
+    .swal2-actions {
+      display: none !important;
+    }
+
+    .swal2-close {
+      border: 0 !important;
+      outline: none !important;
+    }
+  }
+}
