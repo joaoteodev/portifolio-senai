@@ -1,0 +1,39 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.section-box {
+  padding: 0 0 0;
+  border-top: 1px solid $gray;
+  margin-top: 60px;
+
+  .section-img {
+    width: 100%;
+    max-width: 648px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 20px rgba(#000000, 0.3);
+  }
+}
+
+.title-style {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 35px;
+}
+
+h2.title-style {
+  font-size: 30px;
+  margin-bottom: 40px;
+  padding-top: 100px;
+}
+
+h3.title-style {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+#home {
+  padding-top: 60px;
+}

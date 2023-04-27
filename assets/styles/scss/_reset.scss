@@ -1,0 +1,40 @@
+$black: #363732 !default;
+$gray: #696d7d !default;
+$light-gray: #dce1e9 !default;
+$blue: #66c3ff !default;
+$sky-blue: #53d8fb !default;
+$dark-blue: #3256a1 !default;
+$red: #e82c4f !default;
+$yellow: #ffd800 !default;
+$green: #55dd33 !default;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  color: $black;
+  text-align: center;
+}
+
+::selection {
+  background: $dark-blue;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 100%
+  );
+}
