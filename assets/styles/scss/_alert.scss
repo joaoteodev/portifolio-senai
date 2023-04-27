@@ -19,3 +19,9 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .swal2-container .swal2-modal {
+    width: 100%;
+  }
+}
